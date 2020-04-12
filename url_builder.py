@@ -337,11 +337,12 @@ def _create_rikishi_division(num, attr_value):
     num = str(num)
     retstr = ''
     if isinstance(attr_value, type(Division.FROM_LOWER)):
-        pass
+        retstr += _create_rikishi_division_helper(num, attr_value)
     elif _is_list_of_type(attr_value, type(Division.FROM_LOWER)):
-        pass
+        for _ in attr_value:
+            retstr += _create_rikishi_division_helper(num, _)
     else:
-        raise TypeError('Sansho option in rikishi' + num + ' must be a Sansho enum or list[Sansho]')
+        raise TypeError('Division option in rikishi' + num + ' must be a Division enum or list[Division]')
     return retstr
 
 
