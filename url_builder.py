@@ -205,7 +205,7 @@ def _create_rikishi_parameters(num, rikishi):
 def _create_rikishi_shikona(num, attr_value):
     num = str(num)
     retstr = ''
-    if type(attr_value) != str:
+    if type(attr_value) == str:
         retstr += '&shikona' + num + '=' + attr_value
     else:
         raise TypeError(' Shikona in rikishi' + num + ' must be an str')
