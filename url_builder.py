@@ -184,7 +184,7 @@ def _create_rikishi_parameters(num, rikishi):
             elif attrl == 'rank':
                 retstr += _create_rikishi_rank(num, rikishi[attr])
             elif attrl == 'wins':
-                retstr += _create_rikishi_rank(num, rikishi[attr])
+                retstr += _create_rikishi_wins(num, rikishi[attr])
             elif attrl in _WINS_OPTION_STRINGS:
                 retstr += _create_rikishi_winsopt(num, rikishi[attr])
             elif attrl == 'yusho':
