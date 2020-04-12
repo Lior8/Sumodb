@@ -10,7 +10,7 @@ _MAKUSHITA_STRINGS = ['ms', 'makushita']
 _JURYO_STRINGS = ['j', 'juryo']
 _MAKUUCHI__STRINGS = ['m', 'makuuchi ', 'makunouchi']
 _SHIKONA_CHANGES_STRINGS = ['changes', 'include changes', 'include-changes', 'shikona-changes', 'shikona changes']
-_WINS_OPTION_STRINGS = ['wins-options', 'wins options', 'winsopt']
+_WINS_OPTION_STRINGS = ['wins-options', 'wins options', 'winsopt', 'wins option', 'wins-option']
 
 
 def create_url(
